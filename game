@@ -1,0 +1,17 @@
+def rock_paper_scissors():
+   choices = ['камень', 'ножниці', 'бумага']
+   computer_choice = random.choice(choices)
+   user_choice = input("Ваш вибір (камень, ножниці, бумага): ").lower()
+   print(f'Ви обрали: {user_choice}')
+   print(f'Пк обрав: {computer_choice}')
+   if user_choice == computer_choice:
+       print("Нічія!")
+   elif (user_choice) == 'камень' and computer_choice == 'ножниці' or \
+        (user_choice) == 'ножниці' and computer_choice == 'бумага' or \
+        (user_choice) == 'бумага' and computer_choice == 'камень':
+       print("Ви перемогли")
+   else:
+       print("Ви програли")
+
+
+rock_paper_scissors()
